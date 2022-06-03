@@ -1,0 +1,40 @@
+body{
+    font-size: 16px;
+}
+
+h1{
+    font-size: 48px;
+    margin: 45px auto;
+    color: #2e7ad3;
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+    margin: 0 0 10px;
+    color: #104c90;
+}
+
+img{
+    width: 450px;
+}
+
+a{
+    color: #ff8000;
+    font-weight: bolder;
+}
+
+a:focus, a:hover{
+    color: #104c90;
+}
+
+.read-more{
+    margin: 0;
+}
+
+.blog-container{
+    background: #f1f1f1;
+    width: 450px;
+    padding: 25px;
+    margin: 0 auto;
+}
