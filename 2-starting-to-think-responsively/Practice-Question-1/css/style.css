@@ -33,6 +33,7 @@ p{
 .container{
     margin: 0 auto;
     max-width: 980px;
+    width: 95%;
 }
 
 .columns{
@@ -58,6 +59,19 @@ p{
 
 .col-3{
     width: 70%;
+}
+
+@media (max-width: 600px){
+    .columns{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+    .col-bg{
+        padding: 0;
+        padding-top: 0.5em;
+    }
 }
 
 
