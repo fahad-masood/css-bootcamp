@@ -48,13 +48,6 @@ p{
     padding: 1em;
 }
 
-.col-1, 
-.col-2, 
-.col-3{
-    /* margin: 0;
-    padding: 2em; */
-}
-
 .col-1{
     width: 20%;
 }
