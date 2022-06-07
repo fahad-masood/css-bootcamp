@@ -74,6 +74,7 @@ header{
     background: #f8f8f8;
     padding: 2em 0;
     text-align: center;
+    margin-bottom: 3em;
 }
 
 .container{
@@ -137,6 +138,7 @@ nav a:hover{
 
 .article-recent-main{
     order: 2;
+    margin-bottom: 2em;
 }
 
 .article-recent-secondary{
@@ -166,6 +168,32 @@ nav a:hover{
     nav li{
         margin: 0;
         margin-left: 2em;
+    }
+
+    .article-recent{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main{
+        width: 68%;
+    }
+
+    .article-recent-secondary{
+        width: 30%;
+    }
+
+    .article-featured{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image{
+        order: -2;
+    }
+
+    .article-info{
+        order: -1;
     }
 }
 
