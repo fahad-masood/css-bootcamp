@@ -1,17 +1,46 @@
 body{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
 }
 
 /*  =============
     Typography
     ============= */
+h1,
+h2,
+h3{
+    font-family: 'Lora', serif;
+    color: #143774;
+    font-weight: 400;
+}
 
 h1{
     font-size: 2rem;
-    font-family: 'Lora', serif;
     margin: 0;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+a{
+    color: #1792d2;
+}
+
+a:focus,
+a:hover{
     color: #143774;
+}
+
+strong{
+    font-weight: 700;
 }
 
 .subtitle{
@@ -21,6 +50,21 @@ h1{
     color: #1792d2;
 }
 
+.article-info,
+.article-read-more{
+    font-size: 0.875rem;
+}
+
+.article-read-more{
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.article-read-more:hover,
+.article-read-more:focus{
+    text-decoration: underline;
+}
+
 /*  =============
     Layout
     ============= */
@@ -28,6 +72,7 @@ h1{
 header{
     background: #f8f8f8;
     padding: 2em 0;
+    text-align: center;
 }
 
 .container{
@@ -36,8 +81,9 @@ header{
     max-width: 900px;
 }
 
-.container-nav{
+.container-flex{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -45,13 +91,15 @@ header{
 
 nav ul{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
-    padding: 0;
-    justify-content: center;
 }
 
 nav li{
-    margin-left: 2em;
+    margin: 0;
+    margin-right: 2em;
+    padding-bottom: 1em;
 }
 
 nav a{
@@ -74,23 +122,27 @@ nav a:hover{
 
 /* Media Queries */
 
-@media (max-width:730px){
-    .container-nav{
-        flex-direction: column;
+@media (min-width:740px){
+    .container-flex{
+        flex-direction: row;
     }
-
-    header{
-        text-align: center;
+    main{
+        width: 75%;
+    }
+    
+    aside{
+        width: 20%;
     }
 
     nav ul{
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
     }
 
     nav li{
         margin: 0;
-        padding-bottom: 1em;
+        margin-left: 2em;
     }
 }
 
