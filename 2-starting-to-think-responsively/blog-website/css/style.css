@@ -3,6 +3,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 1.125rem;
+    line-height: 1.6;
 }
 
 img{
@@ -53,6 +54,7 @@ strong{
     font-weight: 700;
     margin: 0;
     color: #1792d2;
+    letter-spacing: 2px;
 }
 
 .article-info,
@@ -63,6 +65,7 @@ strong{
 .article-read-more{
     font-weight: 700;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .article-read-more:hover,
@@ -83,7 +86,7 @@ header{
 
 footer{
     background: #143774;
-    color: white;
+    color: rgba(255, 255, 255, 0.65);
     text-align: center;
     padding: 2em;
 }
@@ -128,6 +131,7 @@ nav a{
     font-size: 1rem;
     color: #707070;
     padding: 0.25em 0 ;
+    letter-spacing: 1px;
 }
 
 nav a:focus,
@@ -178,11 +182,13 @@ nav a:hover{
 .widget-title,
 .widget-recent-post-title{
     font-size: 1rem;
+    letter-spacing: 2px;
 }
 
 .widget-title{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+    line-height: 1.4;
 }
 
 .widget-recent-post{
@@ -207,7 +213,7 @@ nav a:hover{
 
 /* Media Queries */
 
-@media (min-width:740px){
+@media (min-width:785px){
     .container-flex{
         flex-direction: row;
     }
