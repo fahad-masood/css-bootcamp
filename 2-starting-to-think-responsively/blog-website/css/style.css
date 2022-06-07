@@ -77,6 +77,13 @@ header{
     margin-bottom: 3em;
 }
 
+footer{
+    background: #143774;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
 .container{
     width: 90%;
     margin: 0 auto;
@@ -145,6 +152,40 @@ nav a:hover{
     order: 1;
 }
 
+/* Sidebar */
+
+.sidebar-widget{
+    border: 20px solid #f8f8f8;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.widget-title,
+.widget-recent-post-title{
+    font-size: 1rem;
+}
+
+.widget-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.widget-recent-post{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child{
+    border: 0;
+    margin: 0;
+}
+
+.widget-image{
+    order: -1;
+}
+
 /* Media Queries */
 
 @media (min-width:740px){
@@ -152,11 +193,11 @@ nav a:hover{
         flex-direction: row;
     }
     main{
-        width: 75%;
+        width: 70%;
     }
     
     aside{
-        width: 20%;
+        width: 25%;
     }
 
     nav ul{
@@ -190,10 +231,14 @@ nav a:hover{
 
     .article-image{
         order: -2;
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
     }
 
     .article-info{
         order: -1;
     }
+
 }
 
